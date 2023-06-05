@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Press Start 2P", cursvie;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 70px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.container .card{
+    position:relative;
+    padding: 10px;
+    width: 300px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .card img{
+    transition: 0.5s;
+    height: 300px;
+}
+
+.container .card h2{
+    font-size: 1rem;
+    padding-top: 15px;
+}
+
+.container .card .container{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .card .container p{
+    color: #666;
+    transition: 0.5s;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top:20px;
+}
+
+.container .card:hover{
+    background-color: #00184d;
+    color: #fff;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #1126e25d;
+    border-color: #00184d;
+}
+
+
+.container .card:hover .content a{
+    color: black;
+    background-color: white;
+}

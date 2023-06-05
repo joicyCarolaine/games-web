@@ -1,0 +1,115 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/plano_de_fundo.jpg");
+    width: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px 20px 50px;
+}
+
+header  {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 15px;
+    margin: 0 0 30px;
+    border-radius: 5px;
+}
+
+header span,button{
+    padding: 20px 10px;
+    border-radius: 7px;
+
+}
+
+.type{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 150px auto;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    aspect-ratio: 3/4; /*Ajusta a proporção do elemento*/
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style:preserve-3d;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.rick{
+    background-image: url(../images/rick/back.png);
+    backface-visibility: hidden;
+}
+
+.gravity_falls{
+    background-image: url(../images/gravity_falls/back.png);
+    backface-visibility: hidden;
+}
+
+.simpsons{
+    background-image: url(../images/simpsons/back.png);
+    backface-visibility: hidden;
+}
+
+.face{
+    width: 100%;
+    height: 100%;
+    position: absolute; /*as duas partes ficarem juntas*/
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #39813a;
+    border-radius: 5px;
+    transition: all 700ms ease;
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+.back{
+    backface-visibility: hidden; /*Esconder a face de trás desse elemento*/
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card{
+    filter: saturate(0);
+    opacity: 0.5;
+}
+
+.restart{
+    background-color: #39813a;
+    border: 2px solid #39813a;
+}
+
+.hide{
+    display: none !important;
+}
+
+.restart:hover{
+    background-color: #fff;
+    cursor: pointer
+}
